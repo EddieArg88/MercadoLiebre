@@ -1,0 +1,130 @@
+@import url(normalize.css);
+
+header {
+    background-color: var(--Amarillo);
+}
+
+#logo{
+    width: 50%;
+}
+
+#headerTop{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    padding: 2rem 0 0 0;
+}
+
+.burger-menu {
+    font-size: 30px;
+    color: white;
+    background-color: var(--Celeste);
+    text-align: center;
+    border-radius: 10px;
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.lupa{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+
+.cuotas{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.cuotas p{
+    font-size: 12px;
+}
+
+.cuotas div{
+    display: inline;
+}
+
+.searchBar{
+    background-color: white;
+    width: 50%;
+    align-self: center;
+    display: flex;
+    border-radius: 4px;
+}
+
+.searchBar form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.searchBar input{
+    width: 100%
+}
+
+#homeBanner img{
+    width: 100vw;
+}
+
+.navBar{
+    display: none;
+}
+
+
+
+
+
+/* Media Tablet */
+@media (min-width: 361px) {
+#logo{
+    width: 30%;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.searchBar{
+    width: 30%;
+}
+
+.cuotas{
+    width: 30%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px; 
+}
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    width: 100vw;
+}
+
+.navBar{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 12px;
+}
+}
+
+/* ------------------ */
+
+/* Media Desktop */
+@media (min-width: 769px) {
+
+
+}
+
+/* ------------------ */

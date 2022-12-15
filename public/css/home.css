@@ -1,0 +1,120 @@
+@import url(normalize.css);
+@import url(header.css);
+@import url(footer.css);
+
+main{
+    background-color: var(--GrisClaro);
+}
+
+.main{
+    width: 90%;
+    margin: auto;
+}
+
+.ultimaVista, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ultimaVista{
+    justify-content: space-between;
+}
+
+.ofertas{
+    justify-content: space-between;
+}
+
+.ofertas{
+    padding-bottom: 1rem;
+}
+
+h3{
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.childBox{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.descripcion{
+    background-color: white;
+    border-top: solid 1px var(--GrisClaro);
+    position: relative;
+    padding: 1rem;
+}
+
+.descripcion i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: var(--Verde);
+    border: 1px solid var(--Verde);
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 80px;
+    top: -15px;
+    transition:
+        ease-out transform .5s,
+        ease-out right .5s;
+}
+
+.childBox:hover .descripcion i{
+    transform: rotateZ(360deg);
+    right: 20px;
+}
+
+.precioDescuento{
+    display: flex;
+}
+
+.precios{
+    font-size: 1rem;
+    padding-right: 0.5rem;
+}
+
+.descuentos{
+    color: var(--Verde);    
+}
+
+h4{
+    display: none;
+    font-size: 12px;
+    background-color: white;
+}
+
+.childBox:hover h4{
+    display: block;
+}
+/* Media Tablet */
+@media (min-width: 361px){
+
+    .childBox{
+        width: 45%; 
+    }
+
+    .childBox:hover{
+        box-shadow : 0px 0px 10px rgb(100 , 100 , 100);
+    }
+
+    .precios{
+        font-size: 0.8rem;
+    }
+}
+
+/* ------------------ */
+
+/* Media Desktop */
+@media (min-width: 769px) {
+    .childBox{
+        width: 23%;
+    }
+}
+
+/* ------------------ */
+

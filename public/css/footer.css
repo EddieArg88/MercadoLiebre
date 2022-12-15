@@ -1,0 +1,61 @@
+@import url(normalize.css);
+
+
+footer{
+    background-color: white;
+}
+
+.mainFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerSection{
+    padding: 2rem 3rem;
+    text-align: center;
+    max-width: 30rem;
+    
+}
+
+.footerSection .fas{
+    font-size: 2rem;
+    color: var(--Azul);
+    padding-bottom: 0.625rem;
+}
+
+.footerSection h2{
+    font-size: 16px
+}
+
+.footerSection p{
+    font-size: 12px
+}
+
+.footerSection .fas:hover{
+    color: blue;
+}
+
+#copyright{
+    font-size: 12px;
+    text-decoration: none;
+    padding: 1rem 1rem;
+}
+
+/* Media Tablet */
+@media (min-width: 361px) {
+
+
+}
+
+/* ------------------ */
+
+/* Media Desktop */
+@media (min-width: 769px) {
+    .mainFooter{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* ------------------ */

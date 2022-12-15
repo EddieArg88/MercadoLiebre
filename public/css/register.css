@@ -1,0 +1,129 @@
+@import url(normalize.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+.main{
+    background-color: var(--GrisClaro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.formularioRegistro{
+    width: 90%;
+    margin: 1rem 0;
+}
+
+.campo{
+    display: block;
+    margin-bottom: 2rem;
+    padding-left: 0.75rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.campo input{
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 0;
+}
+
+.nacimiento{
+    margin-bottom: 2rem;
+}
+
+.nacimiento label h2{
+    margin-bottom: 1rem;
+}
+
+.nacimiento input{
+    background-color: white;
+    border-radius: 4px;
+}
+
+.perfilUser{
+    margin-bottom: 2rem;
+}
+
+.perfilUser label h2{
+    margin-bottom: 1rem;
+}
+
+.intereses{
+    margin-bottom: 2rem;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxes div input{
+    display: inline;
+    margin: 1rem;
+}
+
+.fotoUser{
+    margin-bottom: 2rem;
+}
+
+.fotoUser input{
+    margin-top: 1rem; 
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonRegister, .botonErase{
+    width: 45%;
+}
+.botonRegister button, .botonErase button{
+    font-size: 12px;
+}
+
+.botonRegister button, .botonErase button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--Azul);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.botonRegister:hover button, .botonErase:hover button{
+    background-color: blue;
+    cursor: pointer;
+}
+
+input{
+    display: block;
+}
+
+/* Media Tablet */
+@media (min-width: 361px) {
+
+
+}
+
+/* ------------------ */
+
+/* Media Desktop */
+@media (min-width: 769px) {
+    .campo{
+        width: 35%;
+    }
+
+    .botones{
+        width: 35%;
+    }
+    
+}
+
+/* ------------------ */
+
+
